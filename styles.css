@@ -1,5 +1,3 @@
-/* FIX: ensure HTML hidden attribute always wins */
-[hidden] { display: none !important; }
 /* FILE: /immomakler-berlin-preview/styles.css */
 :root{
   --bg:#0b1020;
