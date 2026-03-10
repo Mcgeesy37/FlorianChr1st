@@ -190,6 +190,13 @@
   // Lightbox
   const lightbox = $('[data-lightbox]');
   const lbImg = $('[data-lightbox-img]');
+  // HARD FAILSAFE: Lightbox niemals beim Laden offen
+  if (lightbox) {
+    lightbox.hidden = true;                 // hidden erzwingen
+    lightbox.classList.remove('is-open');   // falls du den is-open Fix testest
+    lightbox.setAttribute('aria-hidden', 'true');
+  }
+document.body.style.overflow = '';
   const lbClose = $('[data-lightbox-close]');
   const lbPrev = $('[data-lightbox-prev]');
   const lbNext = $('[data-lightbox-next]');
