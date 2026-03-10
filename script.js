@@ -201,24 +201,26 @@
   };
 
   const openLightbox = (idx) => {
-    if (!lightbox) return;
-    setLightbox(idx);
-    lightbox.hidden = false;
-    document.body.style.overflow = 'hidden';
-  };
+  if (!lightbox) return;
+  setLightbox(idx);
+  lightbox.classList.add('is-open');     // <- KEY FIX
+  lightbox.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+};
 
-  const closeLightbox = () => {
-    if (!lightbox) return;
-    lightbox.hidden = true;
-    document.body.style.overflow = '';
-  };
-
+const closeLightbox = () => {
+  if (!lightbox) return;
+  lightbox.classList.remove('is-open');  // <- KEY FIX
+  lightbox.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = '';
+};
+  
   if (lbClose) lbClose.addEventListener('click', closeLightbox);
   if (lbPrev) lbPrev.addEventListener('click', () => setLightbox(lbIndex - 1));
   if (lbNext) lbNext.addEventListener('click', () => setLightbox(lbIndex + 1));
 
   document.addEventListener('keydown', (e) => {
-    if (!lightbox || lightbox.hidden) return;
+    if (!lightbox || !lightbox.classList.contains('is-open')) return;
     if (e.key === 'Escape') closeLightbox();
     if (e.key === 'ArrowLeft') setLightbox(lbIndex - 1);
     if (e.key === 'ArrowRight') setLightbox(lbIndex + 1);
