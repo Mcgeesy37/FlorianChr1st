@@ -1,5 +1,7 @@
 // FILE: /immomakler-berlin-preview/script.js
 (() => {
+  const lightbox = document.querySelector('[data-lightbox]');
+  if (lightbox) lightbox.hidden = true;
   const $ = (sel, root = document) => root.querySelector(sel);
   const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
 
