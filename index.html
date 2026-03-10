@@ -1,1 +1,548 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Florian Christ | Immobilienmakler Berlin – Premium Verkauf & Bewertung</title>
+  <meta name="description" content="Premium Immobilienmakler Berlin: Verkauf, Kauf, Vermietung, Bewertung. Datenbasiert. Diskret. Verhandlungsstark. Galerie mit Google-Profil-Fotos." />
+  <meta name="theme-color" content="#0b1020" />
+  <link rel="icon" href="./assets/img/logo.svg" type="image/svg+xml" />
+  <link rel="preload" href="./styles.css" as="style" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Zum Inhalt springen</a>
 
+  <header class="top" data-header>
+    <div class="container top__inner">
+      <a class="brand" href="./index.html" aria-label="Startseite">
+        <img src="./assets/img/logo.svg" alt="Logo" width="30" height="30" />
+        <span class="brand__name">Florian Christ</span>
+        <small class="brand__tag">Immobilienmakler Berlin</small>
+      </a>
+
+      <nav class="nav" data-nav aria-label="Hauptnavigation">
+        <a href="#leistungen">Leistungen</a>
+        <a href="#prozess">Ablauf</a>
+        <a href="#gebiete">Gebiete</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#bewertungen">Bewertungen</a>
+        <a href="#kontakt" class="btn btn--sm magnetic">Erstgespräch</a>
+      </nav>
+
+      <button class="nav__toggle" type="button" data-nav-toggle aria-label="Menü öffnen">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="progress" aria-hidden="true">
+      <div class="progress__bar" data-progress></div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="glow glow--a"></div>
+        <div class="glow glow--b"></div>
+        <div class="gridlines"></div>
+      </div>
+
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="pill reveal">Berlin • Verkauf • Kauf • Vermietung • Bewertung</p>
+
+          <h1 class="reveal">
+            <span class="grad">Premium</span> Vermarktung in Berlin.<br />
+            <span class="muted">Schnell. Klar. Verhandlungsstark.</span>
+          </h1>
+
+          <p class="lead reveal">
+            Für Eigentümer:innen, die sich vom Markt abheben wollen: starke Positionierung, hochwertige Präsentation,
+            geprüfte Anfragen und ein Prozess, der zuverlässig zum Abschluss führt.
+          </p>
+
+          <div class="hero__cta reveal">
+            <a class="btn magnetic" href="#kontakt">Kostenloses Erstgespräch</a>
+            <a class="btn btn--ghost magnetic" href="#bewertung">Wert anfragen</a>
+          </div>
+
+          <div class="stats reveal" data-counters>
+            <div class="stat">
+              <strong data-count="24">0</strong>
+              <span>Std. Rückmeldung</span>
+            </div>
+            <div class="stat">
+              <strong data-count="7">0</strong>
+              <span>Tage bis Vermarktungsstart</span>
+            </div>
+            <div class="stat">
+              <strong data-count="100">0</strong>
+              <span>Transparenz</span>
+            </div>
+          </div>
+
+          <div class="trustrow reveal">
+            <span>✓ Diskret möglich</span>
+            <span>✓ Geprüfte Interessenten</span>
+            <span>✓ Premium-Exposé</span>
+          </div>
+        </div>
+
+        <div class="hero__card tilt reveal">
+          <div class="hero__cardTop">
+            <div class="badge">NEU • Preview</div>
+            <div class="chip">Berlin / Brandenburg</div>
+          </div>
+
+          <div class="hero__cardBody">
+            <h2>“Crest/Framer”-Vibe<br /><span class="muted">nur für Makler</span></h2>
+            <p>
+              Interaktionen, die nach Premium aussehen: Scroll-Reveal, Marquee, Tilt, Lightbox-Galerie,
+              Sticky-CTA & schneller Seitenaufbau.
+            </p>
+          </div>
+
+          <div class="hero__cardBottom">
+            <a class="btn btn--sm magnetic" href="#galerie">Galerie ansehen</a>
+            <a class="link" href="#prozess">Ablauf →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>Immobilienverkauf</span><span>•</span>
+          <span>Preisstrategie</span><span>•</span>
+          <span>Premium Exposé</span><span>•</span>
+          <span>Off-Market</span><span>•</span>
+          <span>Verhandlung</span><span>•</span>
+          <span>Notar & Übergabe</span><span>•</span>
+          <span>Immobilienverkauf</span><span>•</span>
+          <span>Preisstrategie</span><span>•</span>
+          <span>Premium Exposé</span><span>•</span>
+          <span>Off-Market</span><span>•</span>
+          <span>Verhandlung</span><span>•</span>
+          <span>Notar & Übergabe</span><span>•</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEISTUNGEN -->
+    <section id="leistungen" class="section">
+      <div class="container">
+        <header class="section__head">
+          <h2 class="reveal">Leistungen</h2>
+          <p class="reveal muted">Alles, was “die Besten” am Markt ausmacht – sichtbar auf einer Seite.</p>
+        </header>
+
+        <div class="cards">
+          <article class="card tilt reveal">
+            <div class="card__top">
+              <div class="icon">01</div>
+              <h3>Verkauf</h3>
+            </div>
+            <p>Preispositionierung, Unterlagen, Story, Marketing, Besichtigungen, Verhandlung, Notar, Übergabe.</p>
+            <ul>
+              <li>Premium Exposé & Foto-Story</li>
+              <li>Geprüfte Interessenten</li>
+              <li>Konditionen absichern</li>
+            </ul>
+          </article>
+
+          <article class="card tilt reveal">
+            <div class="card__top">
+              <div class="icon">02</div>
+              <h3>Bewertung</h3>
+            </div>
+            <p>Realistische Marktwerte statt Wunschpreise – datenbasiert, mikrolagen-sensibel, nachvollziehbar.</p>
+            <ul>
+              <li>Vergleichswerte & Nachfrageanalyse</li>
+              <li>Zielgruppen-Preisband</li>
+              <li>Empfehlung: Strategie</li>
+            </ul>
+          </article>
+
+          <article class="card tilt reveal">
+            <div class="card__top">
+              <div class="icon">03</div>
+              <h3>Vermietung</h3>
+            </div>
+            <p>Bonitätsprüfung, Dokumente, Besichtigungssteuerung und Übergabe – zügig & sauber.</p>
+            <ul>
+              <li>Vorauswahl & Dokumentencheck</li>
+              <li>Rechtssichere Übergabe</li>
+              <li>Stressfrei für Eigentümer</li>
+            </ul>
+          </article>
+
+          <article class="card tilt reveal">
+            <div class="card__top">
+              <div class="icon">04</div>
+              <h3>Kaufberatung</h3>
+            </div>
+            <p>Für Käufer:innen: Objektprüfung, Marktcheck, Verhandlung und sichere Entscheidung.</p>
+            <ul>
+              <li>Risiko-/Unterlagenprüfung</li>
+              <li>Preisrealität in Berlin</li>
+              <li>Verhandlung & Abschluss</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURE GRID (Crest-like) -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="split">
+          <div class="split__left">
+            <h2 class="reveal">Design, das nach “Marktführer” aussieht.</h2>
+            <p class="reveal muted">
+              Große Typo. Mutige Layouts. Smarte Mikrointeraktionen. Und trotzdem: schnell, clean, Google-freundlich.
+            </p>
+            <div class="bullets reveal">
+              <div class="bullet"><span>✓</span><p><strong>Premium Look</strong> ohne Framework-Bloat</p></div>
+              <div class="bullet"><span>✓</span><p><strong>Galerie</strong> für Google-Profil-Fotos</p></div>
+              <div class="bullet"><span>✓</span><p><strong>Local SEO</strong>: Strukturierte Daten (Schema)</p></div>
+            </div>
+          </div>
+
+          <div class="split__right">
+            <div class="mosaic">
+              <div class="mosaic__a tilebox tilt reveal">
+                <h3>Story first</h3>
+                <p class="muted">Objekt & Person als Marke – wie bei den besten Framer/Webflow-Seiten.</p>
+              </div>
+              <div class="mosaic__b tilebox tilt reveal">
+                <h3>Speed</h3>
+                <p class="muted">Static HTML/CSS/JS – sofortige Vorschau, ideal für Pitch.</p>
+              </div>
+              <div class="mosaic__c tilebox tilt reveal">
+                <h3>Spielereien</h3>
+                <p class="muted">Scroll-Reveal, Count-up, Tilt, Lightbox, Progress-Bar, Magnetic Buttons.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROZESS -->
+    <section id="prozess" class="section">
+      <div class="container">
+        <header class="section__head">
+          <h2 class="reveal">Ablauf</h2>
+          <p class="reveal muted">Strukturiert, messbar, nachvollziehbar. Kein Chaos – nur Momentum.</p>
+        </header>
+
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step__n">1</span>
+            <div>
+              <h3>Kickoff & Ziele</h3>
+              <p class="muted">Kurzcheck: Ziel, Zeitplan, Diskretion, USP des Objekts.</p>
+            </div>
+          </li>
+          <li class="step reveal">
+            <span class="step__n">2</span>
+            <div>
+              <h3>Preisstrategie</h3>
+              <p class="muted">Daten, Mikrolage, Zustand → Preisband & Positionierung.</p>
+            </div>
+          </li>
+          <li class="step reveal">
+            <span class="step__n">3</span>
+            <div>
+              <h3>Premium Präsentation</h3>
+              <p class="muted">Exposé, Text, Visuals, Portale/Netzwerk/Off-Market – je nach Ziel.</p>
+            </div>
+          </li>
+          <li class="step reveal">
+            <span class="step__n">4</span>
+            <div>
+              <h3>Steuerung & Prüfung</h3>
+              <p class="muted">Vorqualifizierung, Besichtigungen, Nachweise, Finanzierungsstatus.</p>
+            </div>
+          </li>
+          <li class="step reveal">
+            <span class="step__n">5</span>
+            <div>
+              <h3>Verhandlung & Notar</h3>
+              <p class="muted">Konditionen sichern, Notartermin koordinieren, Übergabe begleiten.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- GEBIETE -->
+    <section id="gebiete" class="section section--alt">
+      <div class="container">
+        <div class="territory">
+          <div class="territory__map tilt reveal">
+            <img src="./assets/img/map-berlin.svg" alt="Illustration Berlin Karte" loading="lazy" />
+          </div>
+
+          <div class="territory__copy">
+            <h2 class="reveal">Gebiete</h2>
+            <p class="reveal muted">
+              Stark in Berlin & ausgewählten Lagen in Brandenburg. Fokus auf Mikrolage, Zielgruppe und Nachfrage.
+            </p>
+
+            <div class="chips reveal">
+              <span class="chip">Charlottenburg</span>
+              <span class="chip">Prenzlauer Berg</span>
+              <span class="chip">Mitte</span>
+              <span class="chip">Friedrichshain</span>
+              <span class="chip">Kreuzberg</span>
+              <span class="chip">Zehlendorf</span>
+              <span class="chip">Reinickendorf</span>
+              <span class="chip">Potsdam</span>
+            </div>
+
+            <div class="travel reveal">
+              <div class="travel__item">
+                <strong>4 min</strong>
+                <span class="muted">bis nächste Hotspots</span>
+              </div>
+              <div class="travel__item">
+                <strong>10 min</strong>
+                <span class="muted">zu wichtigen Knoten</span>
+              </div>
+              <div class="travel__item">
+                <strong>15 min</strong>
+                <span class="muted">bis Premium-Lagen</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERIE -->
+    <section id="galerie" class="section">
+      <div class="container">
+        <header class="section__head">
+          <h2 class="reveal">Galerie</h2>
+          <p class="reveal muted">
+            Hier kommen die Bilder aus dem Google-Profil rein. Du legst sie lokal in <code>/assets/gallery</code> ab
+            und trägst die Dateinamen in <code>script.js</code> ein.
+          </p>
+        </header>
+
+        <div class="gallery reveal" data-gallery-grid aria-live="polite"></div>
+      </div>
+
+      <!-- Lightbox -->
+      <div class="lightbox" data-lightbox hidden>
+        <button class="lightbox__close" type="button" data-lightbox-close aria-label="Lightbox schließen">×</button>
+        <button class="lightbox__nav lightbox__nav--prev" type="button" data-lightbox-prev aria-label="Vorheriges Bild">‹</button>
+        <img class="lightbox__img" data-lightbox-img alt="Galeriebild" />
+        <button class="lightbox__nav lightbox__nav--next" type="button" data-lightbox-next aria-label="Nächstes Bild">›</button>
+      </div>
+    </section>
+
+    <!-- BEWERTUNGEN -->
+    <section id="bewertungen" class="section section--alt">
+      <div class="container">
+        <header class="section__head">
+          <h2 class="reveal">Bewertungen</h2>
+          <p class="reveal muted">
+            Preview-Text. Später: echte Google/ProvenExpert Widgets oder statische Zitate mit Nachweis.
+          </p>
+        </header>
+
+        <div class="slider reveal" data-slider>
+          <div class="slider__track" data-slider-track>
+            <figure class="quote">
+              <blockquote>„Extrem strukturiert, schnell in der Kommunikation und stark in der Verhandlung.“</blockquote>
+              <figcaption>— Eigentümer:in (Berlin)</figcaption>
+            </figure>
+            <figure class="quote">
+              <blockquote>„Preisstrategie war realistisch – Ergebnis war besser als erwartet.“</blockquote>
+              <figcaption>— Verkäufer:in (Berlin)</figcaption>
+            </figure>
+            <figure class="quote">
+              <blockquote>„Premium Präsentation + saubere Unterlagen. Absolut empfehlenswert.“</blockquote>
+              <figcaption>— Vermietung (Berlin)</figcaption>
+            </figure>
+          </div>
+
+          <div class="slider__controls">
+            <button class="btn btn--sm btn--ghost magnetic" type="button" data-slider-prev>Zurück</button>
+            <button class="btn btn--sm magnetic" type="button" data-slider-next>Weiter</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <header class="section__head">
+          <h2 class="reveal">FAQ</h2>
+          <p class="reveal muted">Kurz, klar, verkaufsstark.</p>
+        </header>
+
+        <div class="faq">
+          <details class="faq__item reveal">
+            <summary>Was kostet ein Makler in Berlin?</summary>
+            <div class="faq__body muted">
+              Kosten hängen von Auftrag & Situation ab. Im Erstgespräch klären wir transparent, was sinnvoll ist.
+            </div>
+          </details>
+
+          <details class="faq__item reveal">
+            <summary>Geht Off-Market / diskret?</summary>
+            <div class="faq__body muted">
+              Ja. Für bestimmte Objekte ist Diskretion der beste Hebel. Wir wählen Strategie nach Ziel: Reichweite vs. Ruhe.
+            </div>
+          </details>
+
+          <details class="faq__item reveal">
+            <summary>Wie schnell kann verkauft werden?</summary>
+            <div class="faq__body muted">
+              Abhängig von Preis, Unterlagen, Zustand und Nachfrage. Mit guter Vorbereitung reduzieren wir Reibung.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section id="kontakt" class="section section--alt">
+      <div class="container contact">
+        <div class="contact__left">
+          <h2 class="reveal">Kontakt</h2>
+          <p class="lead reveal">
+            Schreib kurz die Eckdaten. Wir melden uns i. d. R. innerhalb von 24 Stunden.
+          </p>
+
+          <div class="meta reveal">
+            <div>
+              <strong>Telefon</strong>
+              <p><a href="tel:+493000000000">+49 30 00000000</a> <span class="muted">(Platzhalter)</span></p>
+            </div>
+            <div>
+              <strong>E-Mail</strong>
+              <p><a href="mailto:info@beispiel.de">info@beispiel.de</a> <span class="muted">(Platzhalter)</span></p>
+            </div>
+            <div>
+              <strong>Standort</strong>
+              <p>Berlin • Vor-Ort nach Absprache</p>
+            </div>
+          </div>
+
+          <div class="note reveal">
+            <strong>Optional “Spielerei”:</strong> Calendly/Termin-Widget oder WhatsApp CTA kann ich sofort integrieren.
+          </div>
+        </div>
+
+        <form class="form reveal" data-lead-form>
+          <label>
+            <span>Name</span>
+            <input name="name" autocomplete="name" required minlength="2" placeholder="Max Mustermann" />
+          </label>
+
+          <label>
+            <span>E-Mail</span>
+            <input name="email" type="email" autocomplete="email" required placeholder="max@beispiel.de" />
+          </label>
+
+          <label>
+            <span>Telefon (optional)</span>
+            <input name="phone" autocomplete="tel" placeholder="+49 ..." />
+          </label>
+
+          <label>
+            <span>Anliegen</span>
+            <select name="topic" required>
+              <option value="" selected disabled>Bitte auswählen</option>
+              <option>Verkauf</option>
+              <option>Bewertung</option>
+              <option>Vermietung</option>
+              <option>Kaufberatung</option>
+              <option>Sonstiges</option>
+            </select>
+          </label>
+
+          <label>
+            <span>Nachricht</span>
+            <textarea name="message" rows="5" required minlength="10" placeholder="Lage, Typ, Größe, Zeitplan…"></textarea>
+          </label>
+
+          <label class="check">
+            <input type="checkbox" name="privacy" required />
+            <span>Ich habe die <a href="./datenschutz.html" target="_blank" rel="noopener">Datenschutzerklärung</a> gelesen.</span>
+          </label>
+
+          <button class="btn magnetic" type="submit">Anfrage senden</button>
+
+          <p class="muted small">
+            Preview nutzt Mailto-Fallback. Live: Backend (PHP/Node) + Turnstile/hCaptcha.
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__grid">
+        <div class="footer__left">
+          <div class="footer__brand">
+            <img src="./assets/img/logo.svg" alt="Logo" width="28" height="28" />
+            <div>
+              <strong>Florian Christ</strong>
+              <div class="muted">Immobilienmakler Berlin</div>
+            </div>
+          </div>
+          <div class="muted small">© <span data-year></span> • Preview</div>
+        </div>
+
+        <div class="footer__right">
+          <a href="./impressum.html">Impressum</a>
+          <a href="./datenschutz.html">Datenschutz</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="sticky">
+      <a class="btn btn--sm magnetic" href="#kontakt">Erstgespräch</a>
+      <a class="btn btn--sm btn--ghost magnetic" href="tel:+493000000000">Anrufen</a>
+    </div>
+
+    <div class="cookie" data-cookie hidden>
+      <div class="cookie__box">
+        <p class="muted">
+          Wir verwenden Cookies zur Bereitstellung der Website und optional für Statistiken.
+          <a href="./datenschutz.html">Mehr erfahren</a>.
+        </p>
+        <div class="cookie__actions">
+          <button class="btn btn--sm btn--ghost magnetic" type="button" data-cookie-decline>Ablehnen</button>
+          <button class="btn btn--sm magnetic" type="button" data-cookie-accept>Akzeptieren</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Local SEO / Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "name": "Florian Christ",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Berlin",
+      "addressCountry": "DE"
+    },
+    "areaServed": ["Berlin", "Brandenburg"],
+    "url": "https://example.com",
+    "telephone": "+49-30-00000000"
+  }
+  </script>
+
+  <script src="./script.js" defer></script>
+</body>
+</html>
