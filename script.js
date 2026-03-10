@@ -308,3 +308,8 @@ const closeLightbox = () => {
     });
   }
 })();
+if (lightbox) {
+  lightbox.hidden = true;
+  lightbox.classList.remove('is-open');
+  document.body.style.overflow = '';
+}
