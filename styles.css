@@ -411,14 +411,21 @@ code{ color: rgba(0,212,255,.92); }
 .gitem--3, .gitem--4, .gitem--5{ grid-column: span 4; }
 .gitem--6{ grid-column: span 12; min-height: 260px; }
 
+/* Lightbox: default OFF, only ON with .is-open */
 .lightbox{
   position:fixed; inset:0; z-index:90;
   background: rgba(0,0,0,.75);
-  display:flex;
+  padding:22px;
+
+  display:none;            /* <- KEY FIX */
   align-items:center;
   justify-content:center;
-  padding:22px;
 }
+
+.lightbox.is-open{
+  display:flex;            /* <- only visible when open */
+}
+
 .lightbox__img{
   max-width: min(1100px, 96vw);
   max-height: 82vh;
@@ -427,6 +434,7 @@ code{ color: rgba(0,212,255,.92); }
   box-shadow: var(--shadow);
   background: rgba(255,255,255,.03);
 }
+
 .lightbox__close{
   position:absolute; top:18px; right:18px;
   width:46px; height:46px;
@@ -437,6 +445,7 @@ code{ color: rgba(0,212,255,.92); }
   font-size:26px;
   cursor:pointer;
 }
+
 .lightbox__nav{
   position:absolute; top:50%; transform:translateY(-50%);
   width:52px; height:52px;
