@@ -661,3 +661,5 @@ code{ color: rgba(0,212,255,.92); }
   .marquee__track{ animation:none; }
   .btn{ transition:none; }
 }
+
+.lightbox[hidden] { display: none !important; }
